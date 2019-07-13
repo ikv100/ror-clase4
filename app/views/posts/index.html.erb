@@ -7,6 +7,8 @@
     <tr>
       <th>Title</th>
       <th>Context</th>
+      <th>User</th>
+      <th>Age</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +18,8 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.context %></td>
+        <td><%= post.user %></td>
+        <td><%= post.age %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
